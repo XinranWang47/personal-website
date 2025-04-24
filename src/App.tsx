@@ -2,37 +2,46 @@ import './App.css'
 import {
   NavigationMenu,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
+import {Link} from 'react-scroll'
 
 
 function App() {
 
   return (
-    <div className='flex justify-end'>
+    <div>
+      <div className='flex justify-end sticky top-1 z-50'>
       <NavigationMenu>
-        <NavigationMenuList className="flex gap-6 px-4 py-2 bg-blue-50 shadow-md rounded-xl">
+        <NavigationMenuList className="flex gap-6 px-6
+        py-3 bg-blue-50 shadow-md rounded-full">
           <NavigationMenuItem>
-              <NavigationMenuLink className="text-gray-700 hover:text-black hover:bg-blue-200 font-medium transition-colors duration-200 cursor-pointer">Home</NavigationMenuLink>
+              <Link to='home' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1"  spy={true} activeClass='bg-blue-200 text-black'>Home</Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-              <NavigationMenuLink className="text-gray-700 hover:text-black hover:bg-blue-200 font-medium transition-colors duration-200 cursor-pointer">About</NavigationMenuLink>
+              <Link to='about' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black'>About</Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-              <NavigationMenuLink className="text-gray-700 hover:text-black hover:bg-blue-200 font-medium transition-colors duration-200 cursor-pointer">Skills</NavigationMenuLink>
+              <Link to='skills' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black'>Skills</Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-              <NavigationMenuLink className="text-gray-700 hover:text-black hover:bg-blue-200 font-medium transition-colors duration-200 cursor-pointer">Projects</NavigationMenuLink>
+              <Link to='projects' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black'>Projects</Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-              <NavigationMenuLink className="text-gray-700 hover:text-black  hover:bg-blue-200 font-medium transition-colors duration-200 cursor-pointer">Experience</NavigationMenuLink>
+              <Link to='experience' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black'>Experience</Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-              <NavigationMenuLink className="text-gray-700 hover:text-black hover:bg-blue-200 font-medium transition-colors duration-200 cursor-pointer">Contact</NavigationMenuLink>
+              <Link to='contact' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black'>Contact</Link>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
+      </div>
+      <section id='home' className='h-screen'>this is home page.</section>
+      <section id='about' className='h-screen'>this is about page</section>
+      <section id='skills' className='h-screen'>this is skills page</section>
+      <section id='projects' className='h-screen'>this is projects page</section>
+      <section id='experience' className='h-screen'>this is experience page</section>
+      <section id='contact' className='h-screen'>this is contact page</section>
     </div>
   )
 }
