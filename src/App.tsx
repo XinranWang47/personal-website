@@ -8,6 +8,8 @@ import {Link} from 'react-scroll'
 import HomeSection from './pages/home'
 import AboutSection from './pages/about'
 import Skills from './pages/skills'
+import Projects from './pages/projects'
+import Contact from './pages/contact'
 
 
 function App() {
@@ -28,10 +30,10 @@ function App() {
               <Link to='skills' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black' offset={-60}>Skills</Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-              <Link to='projects' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black'>Projects</Link>
+              <Link to='projects' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black' offset={-60}>Projects</Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-              <Link to='contact' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black'>Contact</Link>
+              <Link to='contact' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black' offset={-60}>Contact</Link>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
@@ -45,8 +47,12 @@ function App() {
       <section id='skills' className='h-screen'>
         <Skills/>
       </section>
-      <section id='projects' className='h-screen'>this is projects page</section>
-      <section id='contact' className='h-screen'>this is contact page</section>
+      <section id='projects' className='h-screen'>
+        <Projects/>
+      </section>
+      <section id='contact'>
+        <Contact/>
+      </section>
     </div>
   )
 }
