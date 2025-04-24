@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
-const AboutSection = () => {
+export default function AboutSection(){
   return (
     <div className="max-w-4xl mx-auto h-full flex flex-col justify-center px-6 py-12 text-gray-800">
       <div className="flex flex-col justify-center items-center">
@@ -25,6 +25,4 @@ const AboutSection = () => {
       </div>
     </div>
   );
-};
-
-export default AboutSection;
+}

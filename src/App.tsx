@@ -7,6 +7,7 @@ import {
 import {Link} from 'react-scroll'
 import HomeSection from './pages/home'
 import AboutSection from './pages/about'
+import Skills from './pages/skills'
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
               <Link to='about' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black'>About</Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-              <Link to='skills' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black'>Skills</Link>
+              <Link to='skills' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black' offset={-60}>Skills</Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
               <Link to='projects' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black'>Projects</Link>
@@ -41,7 +42,9 @@ function App() {
       <section id='about' className='h-screen'>
         <AboutSection/>
       </section>
-      <section id='skills' className='h-screen'>this is skills page</section>
+      <section id='skills' className='h-screen'>
+        <Skills/>
+      </section>
       <section id='projects' className='h-screen'>this is projects page</section>
       <section id='contact' className='h-screen'>this is contact page</section>
     </div>
