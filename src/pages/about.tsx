@@ -1,4 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import photo from '../assets/photo.jpg'
 
 export default function AboutSection(){
   return (
@@ -6,7 +7,7 @@ export default function AboutSection(){
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-3xl font-bold mb-8 text-blue-800">About Me</h2>
         <Avatar className="mb-8 w-46 h-50">
-          <AvatarImage src="../photo.jpg" className="w-full h-full object-cover rounded-full"/>
+          <AvatarImage src={photo} className="w-full h-full object-cover rounded-full"/>
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </div>
