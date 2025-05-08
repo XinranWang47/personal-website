@@ -26,7 +26,7 @@ export default function Projects(){
           GitHub repo: <a target="_blank" rel="noopener noreferrer" href="https://github.com/XinranWang47/blog-platform.git" className="text-blue-800 underline">🔗Link</a>
           </p>
           <p>
-          Live demo: <a href="" className="text-blue-800 underline">🔗Link</a>
+          Live demo: <a target="_blank" rel="noopener noreferrer" href="https://xinranwang47.github.io/blog-platform/" className="text-blue-800 underline">🔗Link</a>
           </p>
         </CardFooter>
       </Card>
@@ -36,31 +36,31 @@ export default function Projects(){
           <CardDescription>TypeScript+ React + Tailwind</CardDescription>
         </CardHeader>
         <CardContent>
-          <p>A responsive article management system, implementing CRUD operations.</p>
+          <p>Modern portfolio website with smooth navigation and modular design to showcase personal skills and projects.</p>
         </CardContent>
         <CardFooter className="flex flex-col">
           <p>
           GitHub repo: <a target="_blank" rel="noopener noreferrer" href="https://github.com/XinranWang47/personal-website.git" className="text-blue-800 underline">🔗Link</a>
           </p>
           <p>
-          Live demo: <a href="" className="text-blue-800 underline">🔗Link</a>
+          Live demo: <span className="text-blue-800">You're looking at it!</span>
           </p>
         </CardFooter>
       </Card>
       <Card className="w-65">
         <CardHeader>
-          <CardTitle className="text-2xl">Aurora's Blog</CardTitle>
-          <CardDescription>TypeScript+ React + Tailwind</CardDescription>
+          <CardTitle className="text-2xl">To-do App</CardTitle>
+          <CardDescription>React + node.js + Express.js + MongoDB</CardDescription>
         </CardHeader>
         <CardContent>
-          <p>A responsive article management system, implementing CRUD operations.</p>
+          <p>A MERN stack task management app with user-friendly UI and RESTful APIs.</p>
         </CardContent>
         <CardFooter className="flex flex-col">
           <p>
-          GitHub repo: <a href="https://github.com/XinranWang47/blog-platform.git" className="text-blue-800 underline">🔗Link</a>
+          GitHub repo: <a target="_blank" rel="noopener noreferrer" href='https://github.com/XinranWang47/todo-list-full-stack.git' className="text-blue-800 underline">🔗Link</a>
           </p>
           <p>
-          Live demo: <a href="" className="text-blue-800 underline">🔗Link</a>
+          Live demo: <a target="_blank" rel="noopener noreferrer" href="https://todo-app-ten-beta-76.vercel.app/" className="text-blue-800 underline">🔗Link</a>
           </p>
         </CardFooter>
       </Card>

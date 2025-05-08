@@ -33,7 +33,7 @@ function App() {
               <Link to='projects' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black' offset={-60}>Projects</Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-              <Link to='contact' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black' offset={-60}>Contact</Link>
+              <Link to='contact' className="text-gray-700 font-medium transition-colors duration-200 cursor-pointer p-1" spy={true} activeClass='bg-blue-200 text-black' >Contact</Link>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
@@ -50,7 +50,7 @@ function App() {
       <section id='projects' className='h-screen'>
         <Projects/>
       </section>
-      <section id='contact'>
+      <section id='contact' className='h-screen'>
         <Contact/>
       </section>
     </div>

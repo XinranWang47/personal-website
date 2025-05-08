@@ -17,7 +17,11 @@ export default function HomeSection() {
       </p>
 
       <div className="flex gap-4">
-          <Button className="cursor-pointer" variant="default">Download CV<FaFileDownload /></Button>
+        <a href="https://drive.google.com/uc?export=download&id=1HFhVi3LqySE0iaDoC6BFKNiylRNnEQA-" download>
+          <Button variant="default" className="cursor-pointer">
+            Download CV<FaFileDownload />
+          </Button>
+        </a>
         <a href="https://github.com/XinranWang47" target="_blank" rel="noopener noreferrer">
           <Button variant="outline" className="flex items-center gap-2 cursor-pointer">
             <FaGithub /> GitHub
